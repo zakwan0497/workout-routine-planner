@@ -32,8 +32,18 @@ const routineSchema = new mongoose.Schema ( {
 export default mongoose.model("Routine", routineSchema);
 
 
+
 // Models (ChatGPT)
 // Models: Define the structure of your data.
+
+
+// What is Schema?
+// A schema refers to the structure that defines how data is organized, stored, and related to each other.
+
+
+// Why models schema written in SQL?
+// To define the structure and relationships of your data in relational databases.
+
 
 // Why start with Models?
 
