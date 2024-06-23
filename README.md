@@ -1,4 +1,5 @@
 Creating workout routine planner for final project of OCB MERN 2024
 
 Step 1 : Create "models" folder. For database structure.
+
 Step 2 : Create "routes" folder. For defining endpoints of the app, and respond to GET, POST, PUT, DELETE (HTTP requests).
