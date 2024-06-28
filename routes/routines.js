@@ -30,3 +30,8 @@ export default router;
 
 // HTTP methods:
 // GET, POST, PUT, DELETE
+
+
+// Containes routes to handle "routines"
+// e.g. daily task, workout routine, etc.
+// Defines the endpoints for CRUD operations on routines data.

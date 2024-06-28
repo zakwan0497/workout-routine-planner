@@ -32,3 +32,8 @@ export default router;
 
 // HTTP methods:
 // GET, POST, PUT, DELETE
+
+
+// "routes/entries.js" contains routes related to handling entries (meals and routines)
+// e.g. posts, journak entries, to-do items, etc.
+// This file defines the endpoint for Creating, Reading, Updating, and Deleting entries.

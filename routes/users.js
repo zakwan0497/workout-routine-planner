@@ -30,3 +30,8 @@ export default router;
 
 // HTTP methods:
 // GET, POST, PUT, DELETE
+
+
+// Contains routes to handling "users"
+// e.g. create new users, fetch user details, update user information, etc.
+// common in SNS, e-commerce, any app with user accounts.

@@ -22,3 +22,8 @@ export default router;
 
 // HTTP methods:
 // GET, POST, PUT, DELETE
+
+
+// "routes/auth.js" is a file that contains all the routes related to user authentication and authorization
+// e.g. "/register", "/login", "/logout" , password reset, email verification, etc.
+

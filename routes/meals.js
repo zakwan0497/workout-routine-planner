@@ -30,3 +30,8 @@ export default router;
 
 // HTTP methods:
 // GET, POST, PUT, DELETE
+
+
+// Routes relating to handling "meals"
+// Perform CRUD operations on meals data
+// e.g. meal planning, diet tracking, etc.
