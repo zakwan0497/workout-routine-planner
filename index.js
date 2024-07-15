@@ -57,8 +57,7 @@ app.use("/api/entries", entryRoute);
 app.use("/api/routines", routineRoute);
 app.use("/api/meals", mealRoute);
 
-
 app.listen(PORT, () => {
-    console.log("Listening to port 2000");
+    console.log("Listening to the port 2000");
     connect();
 })
