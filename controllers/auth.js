@@ -62,3 +62,16 @@ export const login = async (req, res, next) => {
 
 // HTTP status codes
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses
+
+
+// controllers > auth.js
+
+// The auth.js file within the controllers directory in a backend application typically handles authentication-related operations. 
+// Controllers in a backend framework, such as Express.js, contain functions that define how to respond to client requests for specific endpoints. 
+// The auth.js controller focuses on tasks such as user login, registration, logout, and possibly password reset or token generation.
+
+// user registration
+// user login
+// token management
+// password management
+// user logout 

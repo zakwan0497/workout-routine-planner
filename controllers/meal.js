@@ -64,3 +64,9 @@ export const getMeals = async (req, res, next) => {
         next(err);
     }
 }
+
+
+// controllers > meal.js
+
+// Manage "meals" operations in a database.
+// Handle CRUD for meals. 

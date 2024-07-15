@@ -46,3 +46,9 @@ export const getUsers = async (req, res, next) => {
     }
 };
 
+
+// controllers > user.js
+
+// Manage "user" operations in a database.
+// Handle CRUD for user entries.
+// Often include additional functions , e.g. , authentication, authorization, profile management.

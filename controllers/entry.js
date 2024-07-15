@@ -106,3 +106,11 @@ export const getMealsAndRoutines = async (req, res, next) => {
 
     res.status(200).json(result);
 }
+
+
+// controllers > entry.js
+
+// Manages operations related to entries in a database.
+// An "entry" can refer to various types of records, depending on the application's domain, such as journal entries, database records, or log entries. 
+// This controller handles the CRUD operations.
+// POST, GET, PUT, DELETE 

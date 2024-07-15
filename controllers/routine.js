@@ -62,3 +62,9 @@ export const getRoutines = async (req, res, next) => {
         next(err);
     }
 }
+
+
+// controllers > routine.js
+
+// Manage "routines" operations in a database.
+// Handle CRUD for routine entries.
