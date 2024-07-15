@@ -6,6 +6,8 @@ export const createError = (status, message) => {
 }
 
 
+// Explanation:
+
 // utils > error.js
 
 // Contains utility functions for handling errors.

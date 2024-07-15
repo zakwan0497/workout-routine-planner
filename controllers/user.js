@@ -46,6 +46,7 @@ export const getUsers = async (req, res, next) => {
     }
 };
 
+// Explanation:
 
 // controllers > user.js
 

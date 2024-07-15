@@ -61,3 +61,18 @@ app.listen(PORT, () => {
     console.log("Listening to the port 2000");
     connect();
 })
+
+
+// server > index.js
+
+// Main entry point of the server.
+// Sets up and configure the Express server.
+// Connects to the database.
+// Starts the server to listen for incoming requests.
+
+// Initilize Express App.
+// Middleware COnfiguration. (applies middleware for parsing bodies, handling CORS, logging, etc.)
+// Database Connection.
+// Route Handling. (imports and uses routes handlers for different endpoints)
+// Error Handling. (sets up global error handling middleware)
+// Start Server. (starts the server and listens for incoming requests on specified port)
