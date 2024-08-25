@@ -21,3 +21,11 @@ Step 4 : Create "utils" folder. Used to store utility functions and modules that
         - Maintainability
 
 Step 5 : Create "index.js". Ihe main entry point for a backend application. It sets up the Express app, configures middleware, connects to the database, defines route handlers, applies global error handling, and starts the server. This file is crucial for initializing the application and ensuring that all components are correctly configured and ready to handle requests.
+
+        Function of "index.js" file:
+        - Initilize Express App.
+        - Middleware COnfiguration. (applies middleware for parsing bodies, handling CORS, logging, etc.)
+        - Database Connection.
+        - Route Handling. (imports and uses routes handlers for different endpoints)
+        - Error Handling. (sets up global error handling middleware)
+        - Start Server. (starts the server and listens for incoming requests on specified port)
