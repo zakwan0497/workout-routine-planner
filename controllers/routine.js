@@ -1,5 +1,5 @@
-import Routine from "../models/Routine.js";
-import User from "../models/User.js";
+import Routine from "../models/Routine.js"
+import User from "../models/User.js"
 
 export const createRoutine = async (req, res, next) => {
 
@@ -11,18 +11,15 @@ export const createRoutine = async (req, res, next) => {
             const user = await User.findById(savedRoutine.author);
             user.routines.push(savedRoutine._id);
             await user.save();
-        
-        } catch (err) {
+        }
+        catch (err) {
             next(err)
         }
-
         res.status(200).json(savedRoutine);
-
     } catch (err) {
         next(err);
     }
 };
-
 
 export const updateRoutine = async (req, res, next) => {
     try {
@@ -31,20 +28,16 @@ export const updateRoutine = async (req, res, next) => {
             { $set: req.body },
             { new: true }
         );
-
         res.status(200).json(routine);
-
     } catch (err) {
         next(err);
     }
 };
 
-
 export const deleteRoutine = async (req, res, next) => {
     try {
         await Routine.findByIdAndDelete(req.params.id);
-        res.status(200).json("the Routine has been deleted.");
-    
+        res.status(200).json("the Routine has been deleted");
     } catch (err) {
         next(err);
     }
@@ -57,9 +50,8 @@ export const getRoutines = async (req, res, next) => {
     try {
         const routines = await Routine.find({ author: userId });
         res.status(200).json(routines);
-    
     } catch (err) {
-        next(err);
+        next(err)
     }
 }
 

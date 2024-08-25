@@ -1,35 +1,22 @@
 import mongoose from "mongoose";
 
-const routineSchema = new mongoose.Schema ( {
-    name: {
-        type: String,
-        required: true,
-    },
-    author: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
-        required: true,
-    },
-    workoutType: {
-        type: String,
-        required: true,
-    },
-    bodyPart: {
-        type: String,
-        required: true,
-    },
-    link: {
-        type: String,
-    },
-},
-
+const RoutineSchema = new mongoose.Schema(
     {
-        timestamps: true,
+        name: { type: String, required: true },
+        author: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User', required: true
+        },
+        workout_type: { type: String, required: true },
+        body_part: { type: String, required: true },
+        link: { type: String }
+    },
+    {
+        timestamps: true
     }
-
 )
 
-export default mongoose.model("Routine", routineSchema);
+export default mongoose.model("Routine", RoutineSchema);
 
 
 

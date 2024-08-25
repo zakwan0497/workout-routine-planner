@@ -1,18 +1,17 @@
 import express from "express";
-import{
+import {
     createRoutine,
     deleteRoutine,
-    getRoutine,
+    getRoutines,
     updateRoutine,
-}
-from "../controllers/routine.js";
+} from "../controllers/routine.js";
 
 const router = express.Router();
 
 router.post("/", createRoutine);
 router.put("/:id", updateRoutine);
 router.delete("/:id", deleteRoutine);
-router.get("/:userid", getRoutine);
+router.get("/:userId", getRoutines);
 
 export default router;
 
