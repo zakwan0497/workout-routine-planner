@@ -11,10 +11,14 @@ import mealRoute from "./routes/meals.js";
 import cookieParser from "cookie-parser";
 import cors from "cors"
 
+dotenv.config();
+// const express = require('express');
 const app = express();
 dotenv.config();
 
 const PORT = process.env.PORT || 7700;
+
+console.log("MONGODB URI:", process.env.MONGO);
 
 const connect = async () => {
     try {
@@ -49,7 +53,8 @@ app.use("/api/routines", routineRoute);
 app.use("/api/meals", mealRoute);
 
 app.listen(PORT, () => {
-    console.log("Listening on port 2000");
+    // console.log("Listening on port 2000");
+    console.log(`Listening on port ${PORT}`);
     connect();
 });
 
